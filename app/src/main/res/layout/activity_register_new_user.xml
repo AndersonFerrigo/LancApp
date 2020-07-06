@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical"
+    tools:context=".views.RegisterNewUserActivity">
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@mipmap/ic_logo_lascapp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30sp"
+        android:layout_marginEnd="30sp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/new_register_name"
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="@string/text_insert_user_fullname"
+            android:textColorHint="@color/text_base_color"
+            app:hintTextColor="@color/text_base_color"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@android:color/transparent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:foregroundTint="@color/text_base_color"
+                android:textColor="@color/text_base_color"
+                android:textCursorDrawable="@drawable/my_cursor"
+                tools:targetApi="lollipop" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/new_register_user_email"
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="@string/text_insert_user_email"
+            android:textColorHint="@color/text_base_color"
+            app:hintTextColor="@color/text_base_color"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@android:color/transparent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:foregroundTint="@color/text_base_color"
+                android:textColor="@color/text_base_color"
+                android:textCursorDrawable="@drawable/my_cursor"
+                tools:targetApi="lollipop" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/new_register_user_confirm_email"
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="@string/text_confirm_user_email"
+            android:textColorHint="@color/text_base_color"
+            app:hintTextColor="@color/text_base_color"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@android:color/transparent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:foregroundTint="@color/text_base_color"
+                android:textColor="@color/text_base_color"
+                android:textCursorDrawable="@drawable/my_cursor"
+                tools:targetApi="lollipop" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/new_register_password_user"
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="@string/text_insert_user_password"
+            android:textColorHint="@color/text_base_color"
+            app:hintTextColor="@color/text_base_color"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/text_base_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:foregroundTint="@color/text_base_color"
+                android:textColor="@color/text_base_color"
+                android:textCursorDrawable="@drawable/my_cursor"
+                tools:targetApi="lollipop" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/new_register_confirm_password_user"
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="@string/text_confirm_user_password"
+            android:textColorHint="@color/text_base_color"
+            app:hintTextColor="@color/text_base_color"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/text_base_color">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textPassword"
+                android:foregroundTint="@color/text_base_color"
+                android:textColor="@color/text_base_color"
+                android:textCursorDrawable="@drawable/my_cursor"
+                tools:targetApi="lollipop" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancel_register_new_user_account"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="140dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:text="@string/text_button_cancel_register"
+                android:textColor="@color/text_base_color"
+                app:strokeColor="@color/text_base_color"
+                app:cornerRadius="8dp"
+                app:strokeWidth="2dp"
+                tools:ignore="PrivateResource" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/make_register_new_user_account"
+                android:layout_width="140dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/text_button_confirm_register"
+                android:textColor="@android:color/holo_blue_light"
+                app:backgroundTint="@color/text_base_color"
+                app:cornerRadius="8dp" />
+
+    </LinearLayout>
+</LinearLayout>

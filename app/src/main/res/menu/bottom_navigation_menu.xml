@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+        android:id="@+id/ic_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_search_users_app"
+        android:title="@string/text_describe_icon_feed"/>
+
+        <item
+            android:id="@+id/ic_liked_shares"
+            android:enabled="true"
+            android:icon="@mipmap/ic_like_no_reaction"
+            android:title="@string/text_describe_icon_activities"/>
+
+
+        <item
+            android:id="@+id/ic_list_friends"
+            android:enabled="true"
+            android:icon="@drawable/ic_new_search_users"
+            android:title="@string/text_describe_icon_search_users"/>
+
+        <item
+            android:id="@+id/ic_profile_user"
+            android:enabled="true"
+            android:icon="@drawable/ic_user_profile"
+            android:title="@string/text_describe_icon_profile_user"/>
+
+
+    </group>
+</menu>

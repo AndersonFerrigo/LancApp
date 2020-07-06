@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="70dp"
+    android:layout_marginBottom="60dp"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/btn_load_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_edit_profile_user"
+                android:layout_marginLeft="220dp"
+                android:background="@android:color/transparent">
+            </ImageButton>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Upload photo"
+                android:textColor="@color/text_base_color"
+                android:gravity="right"/>
+
+            </LinearLayout>
+            <ImageView
+            android:id="@+id/image_profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:src="@mipmap/ic_profile_inactive"
+            android:background="@null"
+            tools:ignore="ContentDescription" />
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <ImageButton
+                 android:id="@+id/btn_enable_edit"
+                 android:layout_width="30dp"
+                 android:layout_height="30dp"
+                 android:src="@drawable/ic_edit_profile_user"
+                 android:layout_marginLeft="220dp"
+                 android:background="@android:color/transparent">
+             </ImageButton>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Editar"
+                android:textColor="@color/text_base_color"
+                android:gravity="right">
+
+            </TextView>
+         </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/user_full_name"
+            style="@style/LoginTextInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/text_user_fullname"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:hintTextColor="@color/text_base_color"
+            android:textColorHint="@color/text_base_color"
+            app:boxStrokeColor="@android:color/transparent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:foregroundTint="@color/text_base_color"
+                android:textColor="@color/text_base_color"
+                android:textCursorDrawable="@drawable/my_cursor"
+                tools:targetApi="lollipop" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/user_age"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/text_user_age"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:hintTextColor="@color/text_base_color"
+                android:textColorHint="@color/text_base_color"
+                app:boxStrokeColor="@android:color/transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:foregroundTint="@color/text_base_color"
+                    android:textColor="@color/text_base_color"
+                    android:textCursorDrawable="@drawable/my_cursor"
+                    tools:targetApi="lollipop" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/user_relationship_status"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/text_user_relationship"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:hintTextColor="@color/text_base_color"
+                android:textColorHint="@color/text_base_color"
+                app:boxStrokeColor="@android:color/transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:foregroundTint="@color/text_base_color"
+                    android:textColor="@color/text_base_color"
+                    android:textCursorDrawable="@drawable/my_cursor"
+                    tools:targetApi="lollipop" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/user_city"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/text_user_city"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:hintTextColor="@color/text_base_color"
+                android:textColorHint="@color/text_base_color"
+                app:boxStrokeColor="@android:color/transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:foregroundTint="@color/text_base_color"
+                    android:textColor="@color/text_base_color"
+                    android:textCursorDrawable="@drawable/my_cursor"
+                    tools:targetApi="lollipop" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/user_provincy_state"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/text_user_provincy_state"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:hintTextColor="@color/text_base_color"
+                android:textColorHint="@color/text_base_color"
+                app:boxStrokeColor="@android:color/transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:foregroundTint="@color/text_base_color"
+                    android:textColor="@color/text_base_color"
+                    android:textCursorDrawable="@drawable/my_cursor"
+                    tools:targetApi="lollipop" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/user_country"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/text_user_country"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:hintTextColor="@color/text_base_color"
+                android:textColorHint="@color/text_base_color"
+                app:boxStrokeColor="@android:color/transparent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:foregroundTint="@color/text_base_color"
+                    android:enabled="false"
+                    android:textColor="@color/text_base_color"
+                    android:textCursorDrawable="@drawable/my_cursor"
+                    tools:targetApi="lollipop" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancel_update_user_information"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="140dp"
+            android:layout_height="65dp"
+            android:text="@string/text_button_cancel_update_profile"
+            android:textColor="@color/text_base_color"
+            app:cornerRadius="8dp"
+            app:strokeColor="@color/text_base_color"
+            app:strokeWidth="2dp"
+            tools:ignore="PrivateResource" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/update_user_information"
+            android:layout_width="140dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/text_button_confirm_update_profile"
+            android:textColor="@android:color/holo_blue_light"
+            app:backgroundTint="@color/text_base_color"
+            app:cornerRadius="8dp"
+            />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+ </LinearLayout>

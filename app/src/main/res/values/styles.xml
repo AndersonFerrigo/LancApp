@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="popupMenuStyle">@style/PopupMenu.Example</item>
+
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item name="android:windowTranslucentNavigation" tools:targetApi="kitkat">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:itemBackground">@android:color/holo_blue_light</item>
+
+    </style>
+
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@android:color/white</item>
+        <item name="boxStrokeWidth">2dp</item>
+
+    </style>
+
+    <style name="CustomDialogFragment" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@color/text_base_color</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/holo_blue_light</item>
+        <item name="android:subtitle">@android:color/holo_blue_light</item>
+        <item name="android:itemTextAppearance">@android:color/holo_blue_light</item>
+
+    </style>
+
+   <style name="PopupMenu.Example" parent="@style/Widget.AppCompat.Light.PopupMenu">
+        <item name="android:popupBackground">@color/text_base_color</item>
+    </style>
+</resources>

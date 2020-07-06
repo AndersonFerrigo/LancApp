@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/ic_settings_user"
+            android:enabled="true"
+            android:icon="@drawable/ic_settings_user_account"
+            android:title="@string/text_describe_icon_account"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/holo_blue_light" />
+
+        <item
+            android:id="@+id/ic_friends_user"
+            android:enabled="true"
+            android:icon="@mipmap/ic_like_shared_and_list_inactive"
+            android:title="@string/text_describe_icon_friends"/>
+
+
+    </group>
+</menu>

@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Lanc</string>
+
+    <!-- Text to Login Screen -->
+
+    <string name="text_email_hint">Email</string>
+    <string name="text_password_hint">Password</string>
+    <string name="text_button_register">Register</string>
+    <string name="text_button_sign_in">Sign In</string>
+
+    <!-- Text to Register New User Screen -->
+
+    <string name="text_insert_user_fullname">Full name</string>
+    <string name="text_insert_user_email">Email</string>
+    <string name="text_confirm_user_email">Confirm Email</string>
+    <string name="text_insert_user_password">Password</string>
+    <string name="text_confirm_user_password">Confirm Password</string>
+    <string name="text_button_cancel_register">Cancel</string>
+    <string name="text_button_confirm_register">Register</string>
+
+    <!-- Text to Menu of Bottom Navigation View -->
+
+    <string name="text_describe_icon_home">Home</string>
+    <string name="text_describe_icon_feed">Feed</string>
+    <string name="text_describe_icon_activities">Activities</string>
+    <string name="text_describe_icon_search_users">Search</string>
+    <string name="text_describe_icon_profile_user">Profile</string>
+
+
+    <!-- Text to Menu of Personal information >> Profile and Friends -->
+
+    <string name="text_describe_icon_account">Account</string>
+    <string name="text_describe_icon_friends">Friends</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!-- Text to Register Profile Screen -->
+
+    <string name="text_user_fullname">Full name</string>
+    <string name="text_user_age">Age</string>
+    <string name="text_user_relationship">RelationShip</string>
+    <string name="text_user_city">City</string>
+    <string name="text_user_provincy_state">Provincy / State</string>
+    <string name="text_user_country">Country</string>
+    <string name="text_button_cancel_update_profile">Cancel</string>
+    <string name="text_button_confirm_update_profile">Update</string>
+
+
+    <!-- Text to All Users Screen -->
+
+    <string name="text_all_user_fullname">Full name</string>
+    <string name="text_all_user_provincy_state">Provincy / State</string>
+    <string name="text_all_user_country">Country</string>
+    <string name="text_button_request_friendship">Request Friendship</string>
+    <string name="text_button_remove_from_view">Remove</string>
+
+
+    <!-- Text to Update Register User Screen -->
+
+    <string name="text_update_user_fullname">Full name</string>
+    <string name="text_update_user_email">Email</string>
+    <string name="text_update_confirm_user_email">Confirm Email</string>
+    <string name="text_update_user_password">Password</string>
+    <string name="text_update_confirm_user_password">Confirm Password</string>
+    <string name="text_update_button_cancel">Cancel</string>
+    <string name="text_update_button_confirm">Update</string>
+    <string name="text_enable_update_button">Update</string>
+
+
+
+</resources>
